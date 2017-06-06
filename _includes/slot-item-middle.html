@@ -17,12 +17,14 @@
   </label>
   <a
     href='{% if post.category == "lightning" %}/lightning-talks/{% else %}{{site.baseurl}}{{post.url}}{% endif %}'
-    class='sans block space-top2 sessiontitle'>
+    class='sans block space-top0 sessiontitle'>
    {{post.title}}
  </a>
   <!-- <label><span class="round space-top2 fill-lighten1 micro strong pad0y">Track {{post.track}}</span></label> -->
   <small class='col12 pin-bottomleft pad1'>
     <!--<span class='inline pad0 dot {% if post.name %} fill-{{post.category | downcase | replace: ' ','-' }}{% endif %}' title='{{post.theme}}'></span>-->
+    Theme: {{post.theme}}<br>
+    Audience: {{post.audience}}<br>
     &bull; {{post.name}}{% if post.organization %}, {{post.organization}}{% endif %}
   </small>
 </div>

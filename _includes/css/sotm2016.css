@@ -681,7 +681,7 @@ h3.smaller-title.silver_sponsors:before {
   }
 
   .program-blocks .program-block.program-block-tall {
-    min-height: 195px;
+    min-height: 215px;
 }/*
   .program-blocks .program-block:first-child { border-right-width:0; }*/
   .program-blocks .program-block:last-child { border-left-width:0; }
@@ -772,6 +772,10 @@ a:hover.sessiontitle {
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 0px;
+}
+
+.program-block-tall small {
+    line-height: 16px;
 }
 
 /* Category fills
